@@ -25,7 +25,7 @@
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-            max-width: 800px;
+            max-width: 700px;
             width: 100%;
             overflow: hidden;
             border: 3px solid #000000;
@@ -469,8 +469,8 @@
                         <span class="detail-value">CameraBuff Club Space</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Date And Time </span>
-                        <span class="detail-value"> 06/11/25 , 5 to 6pm</span>
+                        <span class="detail-label">Date & Time</span>
+                        <span class="detail-value">6th November | 5:00 PM - 6:00 PM</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Availability</span>
@@ -500,7 +500,7 @@
                 </div>
 
                 <button class="pay-btn" onclick="processPayment()">
-                      Confirm & Get Ticket
+                    ✓ Confirm & Get Ticket
                 </button>
             </div>
 
@@ -520,11 +520,11 @@
                                     <div class="ticket-value">IIEST Shibpur</div>
                                 </div>
                                 <div class="ticket-detail">
-                                    <div class="ticket-label">Date</div>
-                                    <div class="ticket-value">06/11/2025</div>
+                                    <div class="ticket-label">Date & Time</div>
+                                    <div class="ticket-value">6th Nov | 5-6 PM</div>
                                 </div>
                                 <div class="ticket-detail">
-                                    <div class="ticket-label"> Venue</div>
+                                    <div class="ticket-label">venue</div>
                                     <div class="ticket-value">CameraBuff Clubspace</div>
                                 </div>
                             </div>
@@ -584,19 +584,12 @@
         function generateTicket() {
             const now = new Date();
             const ticketNumber = 'CB' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-            const dateString = now.toLocaleDateString('en-US', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            });
             const timeString = now.toLocaleTimeString('en-US', {
                 hour: '2-digit',
                 minute: '2-digit'
             });
 
             document.getElementById('ticketNumber').textContent = ticketNumber;
-            document.getElementById('ticketDate').textContent = dateString;
             document.getElementById('ticketTime').textContent = timeString;
 
             document.getElementById('paymentSection').style.display = 'none';
@@ -638,7 +631,7 @@
             ctx.font = 'bold 20px Arial';
             ctx.textAlign = 'left';
             ctx.fillText('Ticket #' + document.getElementById('ticketNumber').textContent, 50, 150);
-            ctx.fillText('Date: 06/11/2025', 50, 190);
+            ctx.fillText('Date & Time: 6th November | 5:00 PM - 6:00 PM', 50, 190);
             ctx.fillText('Venue: CameraBuff Clubspace', 50, 230);
             ctx.fillText('College: IIEST Shibpur', 50, 270);
             
@@ -696,5 +689,3 @@
     </script>
 </body>
 </html>
-
-
