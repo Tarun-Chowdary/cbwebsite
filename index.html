@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -24,15 +24,15 @@
         .container {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(255,0,0,0.4);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
             max-width: 800px;
             width: 100%;
             overflow: hidden;
-            border: 3px solid #ff0000;
+            border: 3px solid #000000;
         }
 
         .header {
-            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             padding: 40px;
             text-align: center;
             color: white;
@@ -67,13 +67,13 @@
         }
 
         .corner-logo {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             background: white;
             border-radius: 10px;
             padding: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            border: 2px solid #ff0000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border: 2px solid #000000;
         }
 
         .corner-logo img {
@@ -111,11 +111,11 @@
         }
 
         .event-details {
-            background: #fff5f5;
+            background: linear-gradient(135deg, #fefefe 0%, #f8f8f8 100%);
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 30px;
-            border: 2px solid #ff0000;
+            border: 2px solid #000000;
             position: relative;
         }
 
@@ -134,8 +134,8 @@
             background: white;
             border-radius: 8px;
             padding: 6px;
-            box-shadow: 0 3px 10px rgba(255,0,0,0.2);
-            border: 2px solid #ff0000;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid #000000;
         }
 
         .detail-logo img {
@@ -145,10 +145,11 @@
         }
 
         .event-details h2 {
-            color: #ff0000;
+            color: #000000;
             margin-bottom: 20px;
             font-size: 1.8em;
             margin-top: 40px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .detail-item {
@@ -156,7 +157,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 0;
-            border-bottom: 1px solid #ffcccc;
+            border-bottom: 1px solid #e8e8e8;
         }
 
         .detail-item:last-child {
@@ -165,37 +166,37 @@
 
         .detail-label {
             font-weight: 600;
-            color: #cc0000;
+            color: #1a1a1a;
         }
 
         .detail-value {
-            color: #ff0000;
+            color: #000000;
             font-weight: 600;
         }
 
         .payment-info {
-            background: #fff5f5;
+            background: linear-gradient(135deg, #fefefe 0%, #f8f8f8 100%);
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 30px;
-            border: 2px solid #ff0000;
+            border: 2px solid #000000;
         }
 
         .payment-info h2 {
-            color: #ff0000;
+            color: #000000;
             margin-bottom: 20px;
             font-size: 1.8em;
         }
 
         .price-display {
             font-size: 3em;
-            color: #ff0000;
+            color: #000000;
             font-weight: bold;
             margin: 20px 0;
         }
 
         .free-note {
-            background: #ff0000;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: white;
             padding: 15px 25px;
             border-radius: 50px;
@@ -203,7 +204,7 @@
             font-size: 1.1em;
             display: inline-block;
             margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
             animation: pulse 2s infinite;
         }
 
@@ -224,7 +225,7 @@
         }
 
         .generate-btn, .pay-btn {
-            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: white;
             border: none;
             padding: 18px 50px;
@@ -233,14 +234,14 @@
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
-            border: 2px solid #ff0000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border: 2px solid #000000;
         }
 
         .generate-btn:hover, .pay-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.6);
-            background: linear-gradient(135deg, #ff0000 0%, #990000 100%);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(135deg, #2a2a2a 0%, #000000 100%);
         }
 
         .generate-btn:active, .pay-btn:active {
@@ -265,13 +266,13 @@
 
         .ticket {
             background: white;
-            border: 3px dashed #ff0000;
+            border: 3px dashed #000000;
             border-radius: 15px;
             padding: 40px;
             margin: 30px 0;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(255,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .ticket::before {
@@ -279,7 +280,7 @@
             position: absolute;
             width: 30px;
             height: 30px;
-            background: #ff0000;
+            background: #000000;
             border-radius: 50%;
             top: 50%;
             left: -15px;
@@ -291,7 +292,7 @@
             position: absolute;
             width: 30px;
             height: 30px;
-            background: #ff0000;
+            background: #000000;
             border-radius: 50%;
             top: 50%;
             right: -15px;
@@ -305,13 +306,13 @@
         }
 
         .ticket-info h3 {
-            color: #ff0000;
+            color: #000000;
             font-size: 1.8em;
             margin-bottom: 25px;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 3px solid #ff0000;
+            border-bottom: 3px solid #000000;
             padding-bottom: 15px;
         }
 
@@ -322,15 +323,15 @@
         }
 
         .ticket-detail {
-            background: #fff5f5;
+            background: linear-gradient(135deg, #fefefe 0%, #f8f8f8 100%);
             padding: 15px;
             border-radius: 10px;
-            border-left: 4px solid #ff0000;
+            border-left: 4px solid #000000;
         }
 
         .ticket-label {
             font-size: 0.85em;
-            color: #ff6666;
+            color: #666666;
             margin-bottom: 5px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -339,7 +340,7 @@
 
         .ticket-value {
             font-weight: 700;
-            color: #ff0000;
+            color: #000000;
             font-size: 1.1em;
         }
 
@@ -347,21 +348,21 @@
             text-align: center;
             margin-top: 25px;
             padding-top: 25px;
-            border-top: 2px dashed #ff0000;
-            color: #ff6666;
+            border-top: 2px dashed #000000;
+            color: #666666;
             font-size: 0.9em;
             font-weight: 600;
         }
 
         .ticket-number span {
-            color: #ff0000;
+            color: #000000;
             font-weight: 700;
         }
 
         .download-btn {
             background: white;
-            color: #ff0000;
-            border: 2px solid #ff0000;
+            color: #000000;
+            border: 2px solid #000000;
             padding: 15px 40px;
             font-size: 1.1em;
             font-weight: 600;
@@ -372,10 +373,10 @@
         }
 
         .download-btn:hover {
-            background: #ff0000;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255,0,0,0.4);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
 
         .social-links {
@@ -384,7 +385,7 @@
             gap: 20px;
             margin-top: 30px;
             padding-top: 30px;
-            border-top: 2px solid #ffcccc;
+            border-top: 2px solid #e8e8e8;
         }
 
         .social-btn {
@@ -396,32 +397,32 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            border: 2px solid #ff0000;
+            border: 2px solid #000000;
         }
 
         .instagram-btn {
             background: white;
-            color: #ff0000;
+            color: #000000;
         }
 
         .youtube-btn {
             background: white;
-            color: #ff0000;
+            color: #000000;
         }
 
         .social-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .instagram-btn:hover {
-            background: #ff0000;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: white;
         }
 
         .youtube-btn:hover {
-            background: #ff0000;
-            color:white;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: white;
         }
 
         @media (max-width: 768px) {
@@ -508,7 +509,7 @@
                 <div class="ticket" id="ticketContent">
                     <div class="ticket-main">
                         <div class="ticket-info">
-                            <h3>🎬 Induction Ticket</h3>
+                            <h3>🎬 Admission Ticket</h3>
                             <div class="ticket-details-grid">
                                 <div class="ticket-detail">
                                     <div class="ticket-label">Event Name</div>
@@ -613,14 +614,17 @@
             ctx.fillStyle = '#ffffff';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // Red border
-            ctx.strokeStyle = '#ff0000';
+            // Black border
+            ctx.strokeStyle = '#000000';
             ctx.lineWidth = 4;
             ctx.setLineDash([10, 5]);
             ctx.strokeRect(10, 10, canvas.width - 20, canvas.height - 20);
             
-            // Header with red background
-            ctx.fillStyle = '#ff0000';
+            // Header with black gradient background
+            const gradient = ctx.createLinearGradient(0, 20, 0, 100);
+            gradient.addColorStop(0, '#000000');
+            gradient.addColorStop(1, '#1a1a1a');
+            ctx.fillStyle = gradient;
             ctx.fillRect(20, 20, canvas.width - 40, 80);
             
             // Title
@@ -630,7 +634,7 @@
             ctx.fillText('CAMERABUFF CLUB INDUCTION', canvas.width / 2, 70);
             
             // Ticket details on left side
-            ctx.fillStyle = '#ff0000';
+            ctx.fillStyle = '#000000';
             ctx.font = 'bold 20px Arial';
             ctx.textAlign = 'left';
             ctx.fillText('Ticket #' + document.getElementById('ticketNumber').textContent, 50, 150);
@@ -651,8 +655,8 @@
                 ctx.fillStyle = '#ffffff';
                 ctx.fillRect(qrX - 10, qrY - 10, qrSize + 20, qrSize + 20);
                 
-                // Red border around QR
-                ctx.strokeStyle = '#ff0000';
+                // Black border around QR
+                ctx.strokeStyle = '#000000';
                 ctx.lineWidth = 3;
                 ctx.setLineDash([]);
                 ctx.strokeRect(qrX - 10, qrY - 10, qrSize + 20, qrSize + 20);
@@ -661,7 +665,7 @@
                 ctx.drawImage(qrImg, qrX, qrY, qrSize, qrSize);
                 
                 // Text under QR
-                ctx.fillStyle = '#ff0000';
+                ctx.fillStyle = '#000000';
                 ctx.font = 'bold 14px Arial';
                 ctx.textAlign = 'center';
                 ctx.fillText('Scan to Follow', qrX + qrSize/2, qrY + qrSize + 25);
@@ -669,7 +673,7 @@
                 
                 // Footer
                 ctx.font = '16px Arial';
-                ctx.fillStyle = '#ff6666';
+                ctx.fillStyle = '#666666';
                 ctx.textAlign = 'center';
                 ctx.fillText('Generated: ' + document.getElementById('ticketTime').textContent, canvas.width / 2, 365);
                 
