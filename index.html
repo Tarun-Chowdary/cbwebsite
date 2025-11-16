@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CameraBuff - Club Induction</title>
+    <title>CameraBuff Club Movie Screening</title>
     <style>
         * {
             margin: 0;
@@ -459,10 +459,10 @@
             <!-- Booking Section -->
             <div class="booking-section" id="bookingSection">
                 <div class="event-details">
-                    <h2>🎬 Club Induction 2025</h2>
+                    <h2>🎬 Movie Screening Ticket</h2>
                     <div class="detail-item">
-                        <span class="detail-label">Event</span>
-                        <span class="detail-value">CameraBuff Club Induction</span>
+                        <span class="detail-label">Movie</span>
+                        <span class="detail-value">500 Days of Summer</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Venue</span>
@@ -470,17 +470,13 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Date & Time</span>
-                        <span class="detail-value">6th November | 5:30 PM</span>
+                        <span class="detail-value">17th November | 6:00 PM</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Availability</span>
                         <span class="detail-value">Tickets Available✅</span>
                     </div>
                 </div>
-                <p class="info-text">
-                    ⚠️ After Redirecting Please follow our Instagram page and then come back to confirm your registration.⚠️
-                </p>
-
                 <button class="generate-btn" onclick="redirectToInstagram()">
                     🎫 Generate Your Ticket
                 </button>
@@ -509,22 +505,19 @@
                 <div class="ticket" id="ticketContent">
                     <div class="ticket-main">
                         <div class="ticket-info">
-                            <h3>🎬 INDUCTION Ticket</h3>
+                            <h3>🎬 Movie Ticket</h3>
                             <div class="ticket-details-grid">
                                 <div class="ticket-detail">
-                                    <div class="ticket-label">Event Name</div>
-                                    <div class="ticket-value">CameraBuff Induction</div>
+                                    <div class="ticket-label">Movie </div>
+                                    <div class="ticket-value">500 Days of Summer </div>
                                 </div>
                                 <div class="ticket-detail">
-                                    <div class="ticket-label">College</div>
-                                    <div class="ticket-value">IIEST Shibpur</div>
-                                </div>
                                 <div class="ticket-detail">
                                     <div class="ticket-label">Date & Time</div>
-                                    <div class="ticket-value">6th Nov | 5.30 PM</div>
+                                    <div class="ticket-value">17th Nov | 6:00 PM</div>
                                 </div>
                                 <div class="ticket-detail">
-                                    <div class="ticket-label">venue</div>
+                                    <div class="ticket-label">Venue</div>
                                     <div class="ticket-value">CameraBuff Clubspace</div>
                                 </div>
                             </div>
@@ -557,13 +550,7 @@
         let hasVisitedInstagram = false;
 
         function redirectToInstagram() {
-            const instaUrl = 'https://www.instagram.com/camerabuff_iiests?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==';
-            window.open(instaUrl, '_blank');
-            hasVisitedInstagram = true;
-            
-            setTimeout(() => {
-                showPaymentPage();
-            }, 1500);
+            showPaymentPage()
         }
 
         function showPaymentPage() {
@@ -624,7 +611,7 @@
             ctx.fillStyle = '#ffffff';
             ctx.font = 'bold 36px Arial';
             ctx.textAlign = 'center';
-            ctx.fillText('CAMERABUFF CLUB INDUCTION', canvas.width / 2, 70);
+            ctx.fillText('Ticket', canvas.width / 2, 70);
             
             // Ticket details on left side
             ctx.fillStyle = '#000000';
@@ -633,7 +620,7 @@
             ctx.fillText('Ticket #' + document.getElementById('ticketNumber').textContent, 50, 150);
             ctx.fillText('Date & Time: 6th November | 5:30 PM', 50, 190);
             ctx.fillText('Venue: CameraBuff Clubspace', 50, 230);
-            ctx.fillText('College: IIEST Shibpur', 50, 270);
+            ctx.fillText('Movie: 500 Days of Summer', 50, 270);
             
             // Load and draw QR code on the right side
             const qrImg = new Image();
